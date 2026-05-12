@@ -37,7 +37,7 @@ public class LibroController {
      * GET /api/libros/{id}
      * Search a id book. If don't exist, return 404
      */
-    @GetMapping
+    @GetMapping("/{id}")
     public ResponseEntity<Libro> obteberLibro(@PathVariable long id) {
         Optional<Libro> libro = buscarPorId(id);
 
