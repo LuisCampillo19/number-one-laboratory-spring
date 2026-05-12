@@ -61,7 +61,7 @@ public class LibroController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Libro> actualizarLibro(@PathVariable Long id, @RequestBody Libro libroActualizado) {
-        Optional<Libro> libroExistente = searchById(id);
+        Optional<Libro> libroExistente = buscarPorId(id);
 
         if (libroExistente.isEmpty()) {
             return ResponseEntity.notFound().build();
