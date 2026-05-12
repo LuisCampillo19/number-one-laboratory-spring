@@ -12,5 +12,5 @@ public class Libro {
     private String tittle;
     private String author;
     private String isbn;
-    private int publicationYear;
+    private Integer publicationYear;
 }

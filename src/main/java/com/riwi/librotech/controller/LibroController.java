@@ -98,7 +98,7 @@ public class LibroController {
 
         return ResponseEntity.ok(libro); // 200 OK
     }
-        @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarLibro(@PathVariable Long id) {
         Optional<Libro> libro = buscarPorId(id);
 
